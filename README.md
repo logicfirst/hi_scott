@@ -6,4 +6,24 @@
 
 To get the code the first time onto your own computer:
 
-`git clone 
+In your terminal, navigate to a folder on your computer where you want to store the lecture code. 
+`git clone git@github.com:learn-co-students/dc-web-100520.git`
+
+This will create a folder called dc-web-100520.
+
+
+To get new code after a lecture, go to the lecture directory you created above 
+`cd dc-web-100520`
+`git pull`
+
+If you are typing your own code in this folder during lecture, you will need to either `commit` or `stash` your code
+
+  - If you have notes you want to save:
+    `git add .`
+    `git commit -m "my notes for the lecture"`
+    `git pull`
+  - If you don't want to save your work and just want the lecture code:
+    `git stash`
+    `git pull`
+    
+**Please ask if you have any questions!**
