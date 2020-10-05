@@ -11,6 +11,8 @@
   * `#find`
 * Differentiate array methods by their respective return values
 * Define the Single Responsibility Principle
+  - Every function does exactly one thing
+  - Every thing is done by exactly one function
 * Employ test-driven development best practices in their labs
   * `rspec --fail-fast` handle one error at a time
   * Red, Green, Refactor
