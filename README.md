@@ -4,7 +4,7 @@
 
 ### This repo will hold *all* your lecture code for your 15 weeks here.  *Clone this entire repo to your computer.  DO NOT FORK IT* .  
 
-To get the code the first time onto your own computer:
+#### To get the code the first time onto your own computer:
 
 In your terminal, navigate to a folder on your computer where you want to store the lecture code. 
 
@@ -13,7 +13,7 @@ In your terminal, navigate to a folder on your computer where you want to store 
 This will create a folder called dc-web-100520.
 
 
-To get new code after a lecture, go to the lecture directory you created above 
+#### To get new code after a lecture, go to the lecture directory you created above 
 - `cd dc-web-100520`
 - `git pull`
 
