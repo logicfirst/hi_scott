@@ -18,14 +18,41 @@ class Cat
         # send an email to my mom telling her to take her allergy meds
     end
 
-    def meow
+    def meow 
+        # petey.meow
+        # self == petey
         "Meow meow I am a pretty cat"
     end
 
     def self.all_cats # when self is in a method name, self refers to the Class Cat
         return @@all_cats
     end
+
+    # define a class method called cat_names which returns an array of the names of all 
+    # of the cats 
+
+    def self.cat_names #["Petey", "Ella"] # Cat.cat_names
+        # Cat.cat_names so self == Cat (class)
+
+
+        # set an empty array for cat names
+        # names = []
+        # # get the array of all of the cats
+        # # iterate through it (each)
+        # Cat.all_cats.each do |cat|
+        #     # push this cat's name into empty array 
+        #     names << cat.name
+        # end
+        # # return the array
+        # return names
+        Cat.all_cats.map do |cat|
+            cat.name
+        end
+
+    end
+
     # def name=(new_name) # setter
+        # petey.name=(somethign) so self == petey
     #     # test_local_variable = "foo"
     #     @name = new_name # instance variable, accessible _everywhere_ within this class
     # end
@@ -84,7 +111,6 @@ ella = Cat.new("Ella", "black", 10)
 # ella.fluffiness = 10
 # ella.color = "Black"
 # ella.set_name("Ella")
-
 
 
 binding.pry
