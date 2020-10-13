@@ -12,7 +12,11 @@ class Meal
     end
 
     def restaurants
-
+        RestaurantMeal.all.select do |row|
+            row.meal == self 
+        end.collect do |row| # same as map
+            row.restaurant 
+        end
     end
 
 end
