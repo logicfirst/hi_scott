@@ -21,16 +21,13 @@ burger = Meal.new("Hamburger")
 puts "Meal knows its name?"
 puts burger.name == "Hamburger"
 
-puts "Restaurant starts with no meals"
-puts mcd.meals == []
-
 mcd.add_meal(burger)
 # mcd.add_meal("French Fries")
 bk.add_meal(burger)
 
 puts "Can add a meal to a restaurant"
 puts mcd.meals == [burger]
-
+binding.pry
 chicken = Meal.new("Chicken Nuggets")
 # mcd.add_meal(chicken)
 # puts mcd.meals == [burger, chicken]
@@ -41,7 +38,6 @@ puts chicken.restaurants == [mcd]
 
 # chicken.restaurants=([mcd, bk])
 
-binding.pry
 
 
 
