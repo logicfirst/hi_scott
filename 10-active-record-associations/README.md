@@ -25,9 +25,10 @@
 - set of changes to the shape of our database
 
 ### Steps
-1. create migration
-2. run migration
-3. create the model
+1. create migrations
+2. run migrations
+3. create the model (inheriting from ActiveRecord::Base)
+4. set up relationships
 
 ## Domain
 
@@ -36,3 +37,6 @@
 - A doctor belongs to a single hospital
 - One hospital can have many doctors
 
+# .find vs .find_by
+`.find` works only with ids (raises error if not found)
+`.`find_by` works with a key-value pair (id, name, whatever) (returns `nil` if not found)
