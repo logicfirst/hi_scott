@@ -27,6 +27,7 @@
 ### Steps
 1. create migrations
 2. run migrations
+2a. (optional) run seed file
 3. create the model (inheriting from ActiveRecord::Base)
 4. set up relationships
 
